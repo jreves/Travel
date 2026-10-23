@@ -235,6 +235,7 @@
   .chip.warm { background: #FBE7D9; color: #A2472A; }
   .chip.cool { background: #E3EEF6; color: #3D6587; }
   .chip.note { background: #FFF3D6; color: #8A6514; }
+  .wx-note { font-size: 12.5px; color: var(--sub); margin: -10px 0 22px; }
 
   .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
   .badge {
@@ -431,6 +432,7 @@
     <h2>Getting There · Salt Lake City</h2>
     <div class="section-head-line"></div>
   </div>
+  <p class="wx-note">🌤 Weather updated October 23. Through Oct 29 it comes from the National Weather Service forecast. From Oct 30 on it's an extended outlook (Open-Meteo), so expect it to shift.</p>
 
   <div class="day-list">
 
@@ -445,6 +447,7 @@
           <div class="place-name">Austin · Pups to Camp</div>
           <div class="place-icon">🐕</div>
         </div>
+        <div class="weather"><span class="chip warm">🌦 AUS 81°F · slight chance of showers</span></div>
         <div class="badges">
           <div class="badge">Onion Creek Kennels</div>
           <div class="badge depart">Drop-off 1:00 PM</div>
@@ -464,7 +467,7 @@
           <div class="place-name">Austin → Salt Lake City</div>
           <div class="place-icon">✈️</div>
         </div>
-        <div class="weather"><span class="chip cool">SLC: typically ~60°F / 38°F late October</span></div>
+        <div class="weather"><span class="chip warm">☀️ AUS 83°F departure · mostly sunny</span><span class="chip cool">☀️ SLC 60°F / 41°F · mostly sunny</span></div>
         <div class="badges">
           <div class="badge flight">Delta DL 2671 · Airbus A319</div>
           <div class="badge">Departs 12:31 PM CT (AUS)</div>
@@ -509,7 +512,7 @@
           <div class="place-name">Salt Lake City · Free Day</div>
           <div class="place-icon">🏔️</div>
         </div>
-        <div class="weather"><span class="chip">☀️ Typically ~60°F high</span><span class="chip note">Canyon Spirit package begins today</span></div>
+        <div class="weather"><span class="chip cool">☀️ 62°F / 43°F · mostly sunny, slight chance of light rain overnight</span><span class="chip note">Canyon Spirit package begins today</span></div>
         <div class="badges">
           <div class="badge">Asher Adams · Night 2</div>
           <div class="badge rail">Welcome Package today or tomorrow</div>
@@ -563,7 +566,7 @@
           <div class="place-name">Salt Lake City → Moab</div>
           <div class="place-icon">🚂</div>
         </div>
-        <div class="weather"><span class="chip warm">Moab: typically ~64°F / 38°F</span><span class="chip">Desert, so the evening gets cool</span></div>
+        <div class="weather"><span class="chip cool">🧥 SLC send-off ~50°F</span><span class="chip warm">⛅ Moab ~68°F / ~50°F · partly cloudy</span><span class="chip">💧 ~25% chance of showers</span></div>
         <div class="badges">
           <div class="badge depart">Lobby pick-up 7:15 AM</div>
           <div class="badge rail">Train departs 8:00 AM</div>
@@ -615,7 +618,7 @@
           <div class="place-name">Arches · Moab → Glenwood Springs</div>
           <div class="place-icon">🏜️</div>
         </div>
-        <div class="weather"><span class="chip cool">Glenwood: typically ~58°F / 28°F</span><span class="chip note">🎃 Halloween</span><span class="chip note">⏰ Clocks fall back tonight</span></div>
+        <div class="weather"><span class="chip warm">⛅ Arches ~68°F</span><span class="chip cool">🌦 Glenwood ~59°F / ~43°F · ~40% light showers</span><span class="chip note">🎃 Halloween</span><span class="chip note">⏰ Clocks fall back tonight</span></div>
         <div class="badges">
           <div class="badge depart">Arches tour · morning</div>
           <div class="badge rail">Train departs 12:00 PM</div>
@@ -661,7 +664,7 @@
           <div class="place-name">Glenwood Springs → Denver</div>
           <div class="place-icon">🏔️</div>
         </div>
-        <div class="weather"><span class="chip cool">Denver: typically ~60°F / 33°F</span><span class="chip">Snow possible at the Divide</span></div>
+        <div class="weather"><span class="chip cool">🌦 Glenwood morning ~45% showers</span><span class="chip cool">🏔 Divide country ~54°F / ~33°F · no snow in outlook</span><span class="chip">⛅ Denver ~61°F / ~50°F</span></div>
         <div class="badges">
           <div class="badge rail">Train departs 9:00 AM</div>
           <div class="badge">Arrive Union Station ~5:00–6:30 PM</div>
@@ -715,6 +718,7 @@
           <div class="place-name">Denver → Salt Lake City → Austin</div>
           <div class="place-icon">✈️</div>
         </div>
+        <div class="weather"><span class="chip">⛅ Denver ~68°F</span><span class="chip cool">🌦 SLC ~54°F · ~30% showers</span><span class="chip warm">AUS ~70°F at landing</span></div>
         <div class="badges">
           <div class="badge flight">DL 1553 · A220-100</div>
           <div class="badge flight">DL 2728 · Boeing 737-800</div>
